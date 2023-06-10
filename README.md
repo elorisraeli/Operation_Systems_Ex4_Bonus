@@ -1,21 +1,17 @@
-# Operation_Systems_Ex4
+# Operation_Systems_Ex4_Bonus
 
 How to use the project:
 
 First step is to run all the project using Makefile. To use the Makefile you should enter the command: make
 
-it will generate a react_server and a client files which you could run using ./react_server and ./client <ip> and with the instructions below.
+it will generate a react_server and a client files which you could run using ./server and ./client <ip> and with the instructions below.
 
 ## Multiple Chat
 By using the reactor design pattern our server handles multiple concurrent client connections, and sends data received from one client to all other clients.
 listening on port 9034 
  so there will be at list 3 sides communication. 
  The usage like this:
-- The server side:
-  
-  export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
-  
-  ./react_server
+- The server side: ./server
 - The client A side: ./client IP
 - The client B side: ./client IP
 
@@ -27,9 +23,7 @@ the communication done using IPv4 TCP protocol.
 >
 > Server: 
 > 
-> export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
-> 
-> ./react_server
+> ./server
 >
 > Client A: ./client 127.0.0.1
 >
